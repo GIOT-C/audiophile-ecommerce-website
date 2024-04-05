@@ -1,0 +1,120 @@
+.removeContainer,
+.totalContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cartQuantity {
+  font-size: large;
+  font-weight: 600;
+}
+
+.removeButton {
+  color: hsl(0, 0%, 49%);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.removeButton:hover {
+  color: hsl(22, 65%, 57%);
+  transition: 0.5s;
+}
+
+.cartImg {
+  width: 80%;
+  height: 240px;
+  margin: 20px 0px;
+}
+
+.cartModalInfo {
+  display: flex;
+}
+
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+.productImgContainer {
+  width: 60px;
+  height: 60px;
+}
+
+.productImg {
+  width: 100%;
+  height: 100%;
+}
+
+.cartItemDetails {
+  padding-left: 20px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.cartItemName {
+  font-weight: 700;
+}
+
+.cartItemPrice {
+  color: hsl(0, 0%, 49%);
+  font-weight: 700;
+}
+
+.quantityContainer {
+  display: flex;
+  align-items: center;
+}
+
+.unitQuantity {
+  width: 95px;
+  height: 35px;
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 600;
+}
+
+.unitQuantity > :first-child,
+.unitQuantity > :nth-child(3) {
+  font-size: large;
+  cursor: pointer;
+  color: gray;
+}
+
+.unitQuantity > :first-child:hover,
+.unitQuantity > :nth-child(3):hover {
+  color: hsl(22, 65%, 57%);
+}
+
+.totalContainer {
+  padding: 25px 0px;
+  color: hsl(0, 0%, 49%);
+}
+
+.totalAmount {
+  font-weight: 800;
+  color: black;
+}
+
+.button {
+  width: 100%;
+  height: 48px;
+  background-color: hsl(22, 65%, 57%);
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 770;
+  letter-spacing: 1px;
+}
+
+.button:hover {
+  background-color: hsl(21, 94%, 75%);
+  transition: 0.5s;
+}

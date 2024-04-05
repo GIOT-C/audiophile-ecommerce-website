@@ -1,0 +1,147 @@
+.parentContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 200px 0px;
+}
+
+.categoryNavigation {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.category {
+  width: 30%;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 8px;
+  position: relative;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.categoryImg {
+  width: 60%;
+  height: 200px;
+  position: absolute;
+  top: -38%;
+  left: 20%;
+}
+
+.categoryName {
+  padding-top: 110px;
+  letter-spacing: 2px;
+}
+
+.shopContainer {
+  padding: 15px 0;
+}
+
+.categoryShopText {
+  color: hsl(0, 0%, 47%);
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.categoryShopText:hover {
+  color: hsl(22, 65%, 57%);
+  transition: 0.5s;
+}
+
+.faAngleRight {
+  color: hsl(22, 65%, 57%);
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .parentContainer {
+    padding: 70px 0px;
+  }
+
+  .categoryNavigation {
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  .category {
+    width: 100%;
+  }
+
+  .categoryImg {
+    width: 30%;
+    height: 80px;
+    top: -40%;
+    left: 35%;
+  }
+
+  .categoryName {
+    font-size: 15px;
+    padding-top: 40px;
+  }
+
+  .shopContainer {
+    padding: 5px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .parentContainer {
+    padding: 100px 0px;
+  }
+
+  .category {
+    width: 32%;
+  }
+
+  .categoryImg {
+    width: 70%;
+    height: 125px;
+    top: -30%;
+    left: 15.5%;
+  }
+
+  .categoryName {
+    font-size: 15px;
+    padding-top: 80px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .parentContainer {
+    padding: 120px 0px;
+  }
+
+  .category {
+    width: 32%;
+  }
+
+  .categoryImg {
+    width: 70%;
+    height: 150px;
+    top: -30%;
+    left: 15.5%;
+  }
+
+  .categoryName {
+    font-size: 15px;
+    padding-top: 90px;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1125px) {
+  .category {
+    width: 30%;
+  }
+
+  .categoryImg {
+    width: 70%;
+    height: 180px;
+    top: -30%;
+    left: 15.5%;
+  }
+}

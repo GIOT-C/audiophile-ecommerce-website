@@ -1,0 +1,187 @@
+.headerImg {
+  width: 100%;
+  /* min-height: 100vh; */
+  height: 600px;
+  position: relative;
+}
+
+.newProductInfo {
+  width: 400px;
+  color: white;
+  position: absolute;
+  top: 35%;
+  left: 7.6%;
+}
+
+.header {
+  color: gray;
+  font-size: large;
+  padding-bottom: 20px;
+  opacity: 0;
+  animation: header-animation 1s forwards;
+}
+
+@keyframes header-animation {
+  from {
+    transform: translateX(-100px);
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.header > span {
+  letter-spacing: 6px;
+}
+
+.headerTextTwo {
+  margin-left: 10px;
+}
+
+.productName,
+.productCategory {
+  font-size: 56px;
+}
+
+.productName {
+  animation: productName-animation 2s forwards;
+  opacity: 0;
+}
+
+@keyframes productName-animation {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.productCategory {
+  animation: productCategory-animation 2s forwards;
+  opacity: 0;
+}
+
+@keyframes productCategory-animation {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.productDescription {
+  padding-top: 15px;
+  opacity: 0;
+  animation: productDescription-animation 1.5s forwards;
+}
+
+@keyframes productDescription-animation {
+  from {
+    transform: translateX(-100px);
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.button {
+  width: 160px;
+  height: 48px;
+  color: white;
+  background-color: hsl(22, 65%, 57%);
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+  opacity: 0;
+  animation: button-animation 2s forwards;
+  text-transform: uppercase;
+  font-weight: 770;
+  letter-spacing: 1px;
+}
+
+@keyframes button-animation {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.button:hover {
+  background-color: hsl(21, 94%, 75%);
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+  .newProductInfo {
+    width: 85%;
+    top: 33%;
+    text-align: center;
+  }
+
+  .header {
+    font-size: 15px;
+  }
+
+  .productName,
+  .productCategory {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .newProductInfo {
+    width: 85%;
+    top: 33%;
+    text-align: center;
+  }
+
+  .header {
+    font-size: 18px;
+  }
+
+  .productName,
+  .productCategory {
+    font-size: 50px;
+  }
+
+  .productDescriptionContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .productDescription {
+    width: 60%;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .newProductInfo {
+    width: 85%;
+    top: 33%;
+    text-align: center;
+  }
+
+  .productDescriptionContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .productDescription {
+    width: 60%;
+    text-align: center;
+  }
+}

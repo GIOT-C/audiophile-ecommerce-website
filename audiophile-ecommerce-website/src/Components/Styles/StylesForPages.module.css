@@ -1,0 +1,53 @@
+.parentContainer {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.darkHeader {
+  width: 100%;
+  background-color: black;
+  animation: dark-header-animation 2s forwards;
+  opacity: 0;
+}
+
+.pageTextHeader {
+  font-size: 32px;
+  padding: 200px 0px 85px 0px;
+  color: white;
+  text-align: center;
+  animation: header-animation 3s forwards;
+  opacity: 0;
+}
+
+.productsContainer {
+  width: 100%;
+}
+
+@keyframes header-animation {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes dark-header-animation {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .pageTextHeader {
+    font-size: 28px;
+    padding: 140px 0px 40px 0px;
+  }
+}

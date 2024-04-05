@@ -1,0 +1,91 @@
+.parentContainer {
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.cartItem,
+.summaryPriceDetails,
+.summaryGrandTotalDetails {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.cartItemInfo {
+  display: flex;
+}
+
+.cartItemImgContainer {
+  width: 60px;
+  height: 60px;
+}
+
+.cartItemImg {
+  width: 100%;
+  height: 100%;
+}
+
+.cartItemDetails {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.cartItemName {
+  font-weight: 700;
+}
+
+.cartItemPrice,
+.itemQuantity,
+.summaryPriceDetails,
+.summaryGrandTotalDetails {
+  color: gray;
+}
+
+.itemQuantity {
+  display: flex;
+  align-items: center;
+}
+
+.faXmark {
+  font-size: small;
+}
+
+.cartImg {
+  width: 100%;
+  height: 300px;
+}
+
+.totalAmount {
+  color: black;
+  font-weight: 700;
+}
+
+.summaryGrandTotalDetails {
+  padding: 30px 0px;
+}
+
+.grandTotalAmount {
+  color: hsl(22, 65%, 57%);
+  font-weight: 700;
+}
+
+.button {
+  width: 100%;
+  height: 48px;
+  background-color: hsl(22, 65%, 57%);
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 770;
+  letter-spacing: 1px;
+}
+
+.button:hover {
+  background-color: hsl(21, 94%, 75%);
+  transition: 0.5s;
+}
