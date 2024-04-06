@@ -185,3 +185,38 @@
     text-align: center;
   }
 }
+
+@media only screen and (max-width: 992px) {
+  @keyframes header-animation {
+    from {
+      transform: translateX(0px);
+    }
+  
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes productDescription-animation {
+    from {
+      transform: translateX(0px);
+    }
+  
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes button-animation {
+    from {
+      transform: translateX(0px);
+    }
+  
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+}

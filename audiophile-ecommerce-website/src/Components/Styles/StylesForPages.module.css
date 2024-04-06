@@ -5,7 +5,7 @@
 
 .darkHeader {
   width: 100%;
-  background-color: black;
+  background-color: hsl(0, 0%, 10%);
   animation: dark-header-animation 2s forwards;
   opacity: 0;
 }
